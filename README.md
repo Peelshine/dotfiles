@@ -12,13 +12,13 @@ apt install stow
 
 ## Installation
 
-Clone the repository
+- Clone the repository
 ```
 cd ~
 git clone https://github.com/Peelshine/dotfiles
 ```
 
-Setup symlinks with stow
+- Setup symlinks with stow
 ```
 cd ~/dotfiles
 stow .
