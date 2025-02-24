@@ -26,10 +26,9 @@ zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
 
-# Im gonna be so fr i have no idea what this does im jsut copying most of this
+# Im gonna be so fr i have no idea what this does im just copying most of this
 # line by line from the Dreams of Autonomy zsh config video
 autoload -U compinit && compinit
-
 zinit cdreplay -q
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
