@@ -2,24 +2,24 @@
 
 - Git
 ```
-apt install git
+\# apt install git
 ```
 
 - Stow 
 ```
-apt install stow
+\# apt install stow
 ```
 
 ## Installation
 
 - Clone the repository
 ```
-cd ~
-git clone https://github.com/Peelshine/dotfiles
+$ cd ~
+$ git clone https://github.com/Peelshine/dotfiles
 ```
 
 - Setup symlinks with stow
 ```
-cd ~/dotfiles
-stow .
+$ cd ~/dotfiles
+$ stow .
 ```
