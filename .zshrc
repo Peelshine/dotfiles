@@ -66,17 +66,47 @@ export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
   --color=prompt:#bf616a,spinner:#b48ead,pointer:#b48ead,header:#88c0d0
   --color=border:#3b4252,label:#4c566a,query:#d8dee9'
 
-# Aliases
+# Shorthand aliases
+alias g='git'
+alias py='python3'
+
+# Python aliases
+alias pyserv='py -m http.server'
+
+# Flag aliases
 alias ls='ls -a --color'
+alias vtop='vtop --theme nord'
+
+# Tool aliases
+alias u='cd ..'
+alias uu='cd ..;cd ..'
+alias uuu='cd ..;cd ..; cd ..'
+alias uuuu='cd ..;cd ..; cd ..; cd ..'
+alias uuuuu='cd ..; cd ..; cd ..; cd ..; cd ..'
+
+alias gpu="sudo nvidia-smi daemon & gpustat --no-processes -i"
+
+# Functions
+mkcd() {
+    mkdir -p "${1}"
+    cd "${1}"
+}
+
+gip() {
+    echo Local:
+    hostname -I | grep -Eo '([0-9]*\.){3}[0-9]*' | grep 192.168
+    echo Public:
+    curl https://api.ipify.org
+    echo
+    curl -s https://api.ipify.org | xclip -selection clipboard
+}
 
 # Path extensions
-# export PATH=$PATH:$HOME/bin:$HOME/.local/bin:/usr/local/bin:/usr/bin:/usr/local/games
-# export PATH=$PATH:/usr/local/go/bin
-# export PATH=$PATH:/usr/games
-# export PATH=$PATH:/$DENO_INSTALL/bin
-# export PATH=$PATH:$HOME/Applications/helix
-# export PATH=$PATH:$HOME/.cargo/env
-# export PATH=$PATH:$HOME/.cargo/bin
+export PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:$DENO_INSTALL/bin
+export PATH=$PATH:$HOME/Applications/helix
+export PATH=$PATH:$HOME/.cargo/env
+export PATH=$PATH:$HOME/.cargo/bin
 
 # export PATH=$PATH:
 
