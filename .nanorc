@@ -1,0 +1,6 @@
+set afterends # Make Ctrl+Right stop at word ends instead of beginnings.
+set autoindent # Automatically indent a newly created line to the same number of tabs and/or spaces as the previous line (or as the next line if the previous line is the beginning of a paragraph).
+set boldtext # Use bold instead of reverse video for the title bar, status bar, key combos, function tags, line numbers, and selected text
+set softwrap # Enable soft line wrapping for easier viewing of very long lines.
+set tabsize 4 # Use a tab size of number columns. The value of number must be greater than 0. The default value is 8.
+set tabstospaces # Convert typed tabs to spaces.

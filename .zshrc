@@ -39,6 +39,10 @@ bindkey '^ ' autosuggest-accept
 bindkey '^b' history-search-backward
 bindkey '^n' history-search-forward
 
+bindkey '^[[H' beginning-of-line
+bindkey '^[[F' end-of-line
+
+
 # History
 HISTSIZE=5000
 HISTFILE=~/.zsh_history
