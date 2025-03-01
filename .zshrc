@@ -106,13 +106,10 @@ gip() {
 }
 
 # Path extensions
-export PATH=$PATH:$HOME/.local/bin
-export PATH=$PATH:$DENO_INSTALL/bin
-export PATH=$PATH:$HOME/Applications/helix
 export PATH=$PATH:$HOME/.cargo/env
 export PATH=$PATH:$HOME/.cargo/bin
-
-# export PATH=$PATH:
+export PATH=$PATH:$HOME/.bin
+export PATH=$PATH:$HOME/.local/bin
 
 # Shell integrations
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
