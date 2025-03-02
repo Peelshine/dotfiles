@@ -79,7 +79,7 @@ alias pyserv='py -m http.server'
 
 # Flag aliases
 alias ls='ls -a --color'
-alias vtop='vtop --theme nord'
+alias slurp='slurp -b #00000050 -c #ffffff25 -s #ffffff00'
 
 # Tool aliases
 alias u='cd ..'
