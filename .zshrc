@@ -39,9 +39,15 @@ bindkey '^ ' autosuggest-accept
 bindkey '^b' history-search-backward
 bindkey '^n' history-search-forward
 
+# Alacritty nav keys
 bindkey '^[[H' beginning-of-line
 bindkey '^[[F' end-of-line
 bindkey '^[[3~' delete-char
+
+# TTY nav keys
+bindkey '^[[1~' beginning-of-line
+bindkey '^[[4~' end-of-line
+bindkey '^[[3' delete-char
 
 # History
 HISTSIZE=5000
