@@ -2,12 +2,12 @@
 
 - Git
 ```
-\# apt install git
+# apt install git
 ```
 
 - Stow 
 ```
-\# apt install stow
+# apt install stow
 ```
 
 ## Installation
