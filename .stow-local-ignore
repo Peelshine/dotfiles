@@ -1,4 +1,7 @@
-.git
-.gitignore
 README.md
 LICENSE
+
+.git
+.gitignore
+
+install.sh
