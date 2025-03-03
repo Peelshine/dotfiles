@@ -79,11 +79,16 @@ zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview #'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview #'ls --color $realpath'
 
-# Shorthand aliases
+# Git aliases
 alias g='git'
-alias py='python3'
+alias gs='git status'
+alias gc='git commit'
+alias ga='git add'
+alias gaa='git add --all'
+alias gd='git diff'
 
 # Python aliases
+alias py='python3'
 alias pyserv='py -m http.server'
 
 # Flag aliases
