@@ -12,7 +12,7 @@
 - alacritty
 - thunar
 - wofi
-- (banana-cursor)[https://github.com/ful1e5/banana-cursor]
+- [banana-cursor](https://github.com/ful1e5/banana-cursor)
 # Installation
 - Clone the repository
 ```sh
