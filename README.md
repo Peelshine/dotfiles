@@ -2,15 +2,6 @@
 - Git
 - Stow 
 # Installation
-### Install dependencies
-- Debian
-```sh
-# apt install git stow
-```
-- Void
-```sh
-# xbps-install git stow
-```  
 - Clone the repository
 ```sh
 $ cd ~
