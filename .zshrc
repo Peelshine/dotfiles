@@ -44,6 +44,8 @@ bindkey '^n' history-search-forward
 bindkey '^[[H' beginning-of-line
 bindkey '^[[F' end-of-line
 bindkey '^[[3~' delete-char
+bindkey '^[[1;3D' backward-word
+bindkey '^[[1;3C' forward-word
 
 # TTY nav keys
 bindkey '^[[1~' beginning-of-line
@@ -63,19 +65,19 @@ setopt hist_ignore_all_dups
 setopt hist_save_no_dups
 setopt hist_find_no_dups
 
+export FZF_DEFAULT_OPTS=" \
+#--color=bg+:#ccd0da,bg:#eff1f5,spinner:#dc8a78,hl:#d20f39 \
+--color=fg:#4c4f69,header:#d20f39,info:#8839ef,pointer:#dc8a78 \
+--color=marker:#7287fd,fg+:#4c4f69,prompt:#8839ef,hl+:#d20f39 \
+--color=selected-bg:#bcc0cc \
+--color=border:#ccd0da,label:#4c4f69"
+
 # Completion styling
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
-zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
-zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
-
-# fzf theme
-export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
-  --color=fg:#d8dee9,fg+:#d8dee9,bg:#2e3440,bg+:#3b4252
-  --color=hl:#81a1c1,hl+:#8fbcbb,info:#ebcb8b,marker:#a3be8c
-  --color=prompt:#bf616a,spinner:#b48ead,pointer:#b48ead,header:#88c0d0
-  --color=border:#3b4252,label:#4c566a,query:#d8dee9'
+zstyle ':fzf-tab:complete:cd:*' fzf-preview #'ls --color $realpath'
+zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview #'ls --color $realpath'
 
 # Shorthand aliases
 alias g='git'
@@ -85,6 +87,7 @@ alias py='python3'
 alias pyserv='py -m http.server'
 
 # Flag aliases
+alias yt-dlp-music='yt-dlp -f bestaudio --extract-audio --audio-format mp3 --audio-quality 0'
 alias ls='ls -a --color'
 alias slurp='slurp -b #00000050 -c #ffffff25 -s #ffffff00'
 
