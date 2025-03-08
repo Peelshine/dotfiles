@@ -83,10 +83,11 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview #'ls --color $realpath'
 # Git aliases
 alias g='git'
 alias gs='git status'
+alias gd='git diff'
 alias gc='git commit'
+alias gp='git push'
 alias ga='git add'
 alias gaa='git add --all'
-alias gd='git diff'
 
 # Python aliases
 alias py='python3'
