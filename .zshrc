@@ -21,11 +21,12 @@ source "${ZINIT_HOME}/zinit.zsh"
 zinit ice depth=1; zinit light romkatv/powerlevel10k
 
 # Load zsh plugins
-zinit light zsh-users/zsh-syntax-highlighting
+#zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
 zinit light MichaelAquilina/zsh-autoswitch-virtualenv
+zinit light zdharma-continuum/fast-syntax-highlighting
 
 # Im gonna be so fr i have no idea what this does im just copying most of this
 # line by line from the Dreams of Autonomy zsh config video
