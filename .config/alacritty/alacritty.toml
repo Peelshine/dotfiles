@@ -22,4 +22,9 @@ family = "JetBrainsMonoNerdFontMono"
 style = "Bold Italic"
 
 [window]
-opacity=0.7
+opacity=1
+
+# [window.padding]
+# x=8
+# y=8
+dynamic_padding=true
